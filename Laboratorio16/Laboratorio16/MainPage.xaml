@@ -29,7 +29,8 @@
                                 <Frame Padding="8"
                                    HeightRequest="180" 
                                    HasShadow="True"
-                                   BorderColor="#C0C0C0">
+                                   BorderColor="#C0C0C0"
+                                   BackgroundColor="#F5F5F5">
 
                                     <Grid Padding="12">
                                         <Grid.RowDefinitions>
@@ -60,9 +61,16 @@
                                                  Grid.Row="1"
                                                  Orientation="Horizontal">
 
-                                            <Label Text="{Binding Location.City + ', ' + Location.Country}"
-                                               TextColor="Gray"
-                                               FontAttributes="Italic"/>
+                                            <Label Text="{Binding Location.City}" 
+       TextColor="Gray"
+       FontAttributes="Bold"/>
+
+                                            <Label Text=", "
+       TextColor="Gray"/>
+
+                                            <Label Text="{Binding Location.Country}"
+       TextColor="Gray" 
+       FontAttributes="Italic"/>
 
                                             <StackLayout Orientation="Horizontal"
                                                      Spacing="0">
